@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+/* .homepage-img {
+  max-height: 35vh;
+}
+ */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +39,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home-cards>div {
+  box-sizing: border-box;
+  margin: 50px 1% 0 1%;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  min-height: 35vh;}
+
+.home-cards>div>p{
+  color: rgb(83, 83, 83);
+}
+
+.beer-card {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.beer-card>div>a>img {
+  max-height: 165px;
+  margin-right: 15px;
+}
+
+.beer-card>div>h3 {
+  color: grey;
+}
+
+.beer-card>div>p {
+  font-style: oblique;
 }
