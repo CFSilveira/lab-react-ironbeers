@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
 function Beers() {
     const [beers, setBeers] = useState([])
 
@@ -28,7 +27,7 @@ function Beers() {
         {beers.map((beer) => (
             <div className='beer-card'>
                 <div>
-                    <a href="/beers/:beerId"><img src={beer.image_url} alt='Bottle of beer' /></a>
+                    <a href={`/BeerDetails/${beer._id}`}><img src={beer.image_url} alt='Bottle of beer' /></a>
                 </div>
                 <div>
                     <h2>{beer.name}</h2>
